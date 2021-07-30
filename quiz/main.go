@@ -32,10 +32,11 @@ func main() {
 		fmt.Scanf("%s\n", &answer)
 		if answer == p.a {
 			correct++
+			
 		}
 
 	}
-	fmt.Printf("You scored %d out of %d.\n That is %d percent ", correct, len(problems), correct/len(problems)*5)
+	fmt.Printf("You scored %d out of %d.\n That is %.2f percent! ", correct, len(problems), float32(correct) / float32(len(problems))*100)
 
 }
 
