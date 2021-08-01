@@ -1,9 +1,10 @@
 package main
 
 import(
-		// "fmt"
+		"fmt"
 		// "errors"
 		// "math"
+		"github.com/James-Muralles/Go-Practice/num_in_list"
 		
 
 
@@ -153,6 +154,6 @@ func main () {
 // pointers
 // func inc(x *int){
 // 	*x++ //derefrencing 
-NumInList([]int{1,2,3,4},4)
+fmt.Println(num_in_list.NumInList([]int{1,2,3,4},4))
 
 }
