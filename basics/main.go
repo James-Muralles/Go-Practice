@@ -1,9 +1,12 @@
 package main
 
 import(
-		"fmt"
+		// "fmt"
 		// "errors"
 		// "math"
+		
+
+
 
 )
 
@@ -118,11 +121,11 @@ func main () {
 // 	fmt.Println(result)
 // }
 
-i :=  7
-inc(&i) // points to the memory space at i
-fmt.Println(i)	
+// i :=  7
+// inc(&i) // points to the memory space at i
+// fmt.Println(i)	
 
-}
+// }
 
 // making a function outside of the main
 
@@ -148,6 +151,8 @@ fmt.Println(i)
 
 
 // pointers
-func inc(x *int){
-	*x++ //derefrencing 
+// func inc(x *int){
+// 	*x++ //derefrencing 
+NumInList([]int{1,2,3,4},4)
+
 }
