@@ -4,7 +4,8 @@ import(
 		"fmt"
 		// "errors"
 		// "math"
-		"github.com/James-Muralles/Go-Practice/num_in_list"
+		// "github.com/James-Muralles/Go-Practice/num_in_list"
+		"github.com/James-Muralles/Go-Practice/sumlist"
 		
 
 
@@ -86,6 +87,9 @@ func main () {
 
 // arr := []string{"a", "b", "c"}
 
+arr2 := []int{10,20,30,40}
+
+
 // for index, value := range arr{
 
 // 	fmt.Println("index:", index, "value:", value)
@@ -154,6 +158,10 @@ func main () {
 // pointers
 // func inc(x *int){
 // 	*x++ //derefrencing 
-fmt.Println(num_in_list.NumInList([]int{1,2,3,4},4))
+
+
+
+// fmt.Println(num_in_list.NumInList([]int{1,2,3,4},4))
+fmt.Println(sumlist.SumList(arr2))
 
 }
