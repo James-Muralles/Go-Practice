@@ -5,7 +5,8 @@ import(
 		// "errors"
 		// "math"
 		// "github.com/James-Muralles/Go-Practice/num_in_list"
-		"github.com/James-Muralles/Go-Practice/sumlist"
+		// "github.com/James-Muralles/Go-Practice/sumlist"
+		"github.com/James-Muralles/Go-Practice/strings"
 		
 
 
@@ -87,7 +88,7 @@ func main () {
 
 // arr := []string{"a", "b", "c"}
 
-arr2 := []int{10,20,30,40}
+// arr2 := []int{10,20,30,40}
 
 
 // for index, value := range arr{
@@ -162,6 +163,7 @@ arr2 := []int{10,20,30,40}
 
 
 // fmt.Println(num_in_list.NumInList([]int{1,2,3,4},4))
-fmt.Println(sumlist.SumList(arr2))
+// fmt.Println(sumlist.SumList(arr2))
+fmt.Println(strings.Reverse("hello world"))
 
 }
