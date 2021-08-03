@@ -1,8 +1,9 @@
 package functions
 
 import (
-"fmt"
-
+	"fmt"
+	"strconv"
+	
 )
 
 func FizzBuzz (input int) string {
@@ -22,4 +23,19 @@ func FizzBuzz (input int) string {
 	}
 	
 	return fmt.Sprintf("\n%d\n" ,input)
+}
+
+func DecToBase (dec int, base int ) string {
+	var res string 
+	
+	for  dec != 0 {
+		remainder := dec % base
+		res = strconv.Itoa(remainder) + res
+		dec = dec / base
+
+	}
+
+	return res
+	
+
 }
