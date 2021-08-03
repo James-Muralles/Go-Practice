@@ -1,12 +1,15 @@
 package main
 
 import(
-		"fmt"
+		// "fmt"
 		// "errors"
 		// "math"
 		// "github.com/James-Muralles/Go-Practice/num_in_list"
 		// "github.com/James-Muralles/Go-Practice/sumlist"
-		"github.com/James-Muralles/Go-Practice/strings"
+		// "github.com/James-Muralles/Go-Practice/strings"
+		"github.com/James-Muralles/Go-Practice/functions"
+		"io"
+		"os"
 		
 
 
@@ -164,6 +167,19 @@ func main () {
 
 // fmt.Println(num_in_list.NumInList([]int{1,2,3,4},4))
 // fmt.Println(sumlist.SumList(arr2))
-fmt.Println(strings.Reverse("hello world"))
+// fmt.Println(strings.Reverse("hello world"))
+
+for i := 1; i <= 100; i++ {
+	// fmt.Println(functions.FizzBuzz(i))
+
+	io.WriteString(os.Stdout, functions.FizzBuzz(i) )
+
+} 
+
+
 
 }
+
+
+
+
