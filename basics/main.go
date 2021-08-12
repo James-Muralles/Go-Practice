@@ -177,6 +177,9 @@ func main () {
 // } 
 
 fmt.Println(functions.DecToBase(10,9))
+fmt.Println(functions.FindTwoThatSum([]int{1,2,3,4,5},7))
+fmt.Println(functions.Fibionacci(41))
+fmt.Println(functions.FibNoRecursion(41))
 
 
 

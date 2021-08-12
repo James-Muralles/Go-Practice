@@ -39,3 +39,47 @@ func DecToBase (dec int, base int ) string {
 	
 
 }
+
+func FindTwoThatSum (list[] int, sum int) (int,int){
+	for i, val := range list {
+		for j, val2 := range list {
+			if i == j  {
+				continue
+			}
+			if val + val2 == sum{
+				return i,j
+			}
+		}
+
+	}
+	return -1,-1
+
+}
+func Fibionacci(n int) int {
+	if n <= 1 {
+		return n
+	} else {
+
+		
+
+		return Fibionacci(n - 1) + Fibionacci(n - 2);
+		
+	}
+	
+}
+
+func  FibNoRecursion(n int) int {
+	
+	if n <= 1 {
+		return n
+	}
+	nMinus2 := 0
+	nMinus1 := 1
+	var cur int
+	for i := 2; i <=n; i++ {
+		cur = nMinus2 + nMinus1
+		nMinus2 = nMinus1
+		nMinus1 =cur
+	}
+	return cur
+}
